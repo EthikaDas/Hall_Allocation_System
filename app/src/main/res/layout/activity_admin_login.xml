@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="40dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="@string/admin_login"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etAdminLoginEmail"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginHorizontal="20dp"
+            android:hint="@string/Admin_email"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#94A3B8"
+            android:backgroundTint="#3D5AFE"
+            android:inputType="textEmailAddress"
+            android:autofillHints="emailAddress"
+            tools:ignore="TextFields" />
+
+        <EditText
+            android:id="@+id/etAdminLoginPassword"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginHorizontal="20dp"
+            android:hint="@string/ad_password"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#94A3B8"
+            android:backgroundTint="#3D5AFE"
+            android:inputType="textPassword"
+            android:autofillHints="password"
+            tools:ignore="TextFields" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnAdminLogin"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginHorizontal="20dp"
+            android:background="#3D5AFE"
+            android:text="@string/login_as_admin"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvAdminCancelLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/Ad_Cancel"
+            android:textColor="#FF5252"
+            android:padding="16dp" />
+
+    </LinearLayout>
+</ScrollView>

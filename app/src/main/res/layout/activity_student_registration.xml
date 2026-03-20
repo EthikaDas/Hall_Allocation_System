@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    android:fillViewport="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:paddingTop="30dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/Student_Registration"
+            android:textColor="#FFFFFF"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etRoll"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginTop="9dp"
+            android:autofillHints="none"
+            android:backgroundTint="#3D5AFE"
+            android:hint="@string/Roll_number"
+            android:inputType="number"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#94A3B8" />
+
+        <EditText android:id="@+id/etName"
+            android:layout_marginHorizontal="32dp"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="9dp"
+            android:hint="@string/Full_Name"
+            android:inputType="textPersonName" android:autofillHints="name"
+            android:textColor="#FFFFFF" android:textColorHint="#94A3B8" android:backgroundTint="#3D5AFE"/>
+
+        <EditText android:id="@+id/etSeries"
+            android:layout_marginHorizontal="32dp"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="9dp"
+            android:hint="@string/series"
+            android:inputType="number" android:autofillHints="none"
+            android:textColor="#FFFFFF" android:textColorHint="#94A3B8" android:backgroundTint="#3D5AFE"/>
+
+        <EditText android:id="@+id/etDept"
+            android:layout_marginHorizontal="32dp"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="9dp" android:hint="@string/Department"
+            android:inputType="text" android:autofillHints="none"
+            android:textColor="#FFFFFF" android:textColorHint="#94A3B8" android:backgroundTint="#3D5AFE"/>
+
+        <EditText
+            android:id="@+id/etGender"
+            android:layout_marginHorizontal="32dp"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="9dp"
+            android:autofillHints="none"
+            android:backgroundTint="#3D5AFE"
+            android:hint="@string/gender"
+            android:inputType="text"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#94A3B8" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_marginHorizontal="32dp"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="9dp"
+            android:autofillHints="emailAddress"
+            android:backgroundTint="#3D5AFE"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#94A3B8" />
+
+        <EditText android:id="@+id/etPhone"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginHorizontal="32dp"
+            android:hint="@string/phone"
+            android:inputType="phone" android:autofillHints="phoneNumber"
+            android:textColor="#FFFFFF" android:textColorHint="#94A3B8" android:backgroundTint="#3D5AFE"/>
+
+        <EditText android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginHorizontal="32dp"
+            android:hint="@string/Password"
+            android:inputType="textPassword" android:autofillHints="password"
+            android:textColor="#FFFFFF" android:textColorHint="#94A3B8" android:backgroundTint="#3D5AFE"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSubmitStudent"
+            android:layout_marginHorizontal="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:minWidth="300dp"
+            android:layout_marginTop="30dp"
+            android:background="#3D5AFE"
+            android:text="@string/Register"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tvCancel"
+            android:layout_marginHorizontal="32dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/Cancel"
+            android:textColor="#FF5252"
+            android:padding="16dp" />
+
+    </LinearLayout>
+</ScrollView>

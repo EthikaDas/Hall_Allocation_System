@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/main_background"
+    android:padding="30dp"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="@string/log_in"
+        android:textColor="#FFFFFF"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="100dp"
+        android:text="@string/are_you_a_student_or_an_admin"
+        android:textColor="#94A3B8"
+        android:textSize="17sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnStudentRole"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:minWidth="300dp"
+        android:layout_marginBottom="20dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:background="#3D5AFE"
+        android:text="@string/student"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnAdminRole"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:minWidth="300dp"
+        android:layout_marginBottom="40dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:background="#3D5AFE"
+        android:text="@string/admin"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvBackToHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/go_back_to_main"
+        android:textColor="#FF5252"
+        android:textStyle="bold"
+        android:textSize="13sp"
+        android:padding="16dp"
+        android:minHeight="48dp"
+        android:gravity="center"
+        android:letterSpacing="0.1"
+        android:clickable="true"
+        android:focusable="true"/>
+
+</LinearLayout>

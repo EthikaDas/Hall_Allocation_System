@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dashboard_background">
+
+    <TextView
+        android:id="@+id/tvUpdateTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="32dp"
+        android:text="Update Profile"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.416"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintTop_toBottomOf="@id/tvUpdateTitle"
+        app:layout_constraintBottom_toTopOf="@id/btnBackCard">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/glass_card"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/FullName"
+                android:textColor="#FFFFFF" />
+            <EditText
+                android:id="@+id/etUpdateAdminName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="@string/Enter"
+                android:background="@drawable/edittext_background"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:paddingStart="12dp"
+                android:textColor="#FFFFFF"
+                android:inputType="textPersonName"
+                android:importantForAutofill="no" />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Email_address"
+                android:textColor="#FFFFFF" />
+            <EditText
+                android:id="@+id/etUpdateAdminEmail"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="@string/Enter"
+                android:background="@drawable/edittext_background"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:paddingStart="12dp"
+                android:textColor="#FFFFFF"
+                android:inputType="textEmailAddress"
+                android:importantForAutofill="no" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/new_password_leave_blank_to_keep_current"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+            <EditText
+                android:id="@+id/etUpdateAdminPassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="@string/Enter"
+                android:background="@drawable/edittext_background"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="24dp"
+                android:paddingStart="12dp"
+                android:textColor="#FFFFFF"
+                android:inputType="textPassword"
+                android:importantForAutofill="no" />
+
+            <Button
+                android:id="@+id/btnSaveProfile"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:backgroundTint="#4CAF50"
+                android:text="@string/save_changes"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/btnBackCard"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/glass_card"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@android:drawable/ic_menu_revert"
+            android:contentDescription="@string/go_back"
+            app:tint="#212121" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/Ad_Cancel"
+            android:textColor="#212121"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/dashboard_background">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardAdminHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="0dp"
+            app:cardBackgroundColor="#22FFFFFF"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="20dp">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@android:drawable/ic_menu_manage"
+                    android:contentDescription="@string/admin_icon"
+                    app:tint="#FFFFFF" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/admin_panel"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.1" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/tvAdminOptionsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/management_services"
+            android:textColor="#FAFAFA"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/cardAdminHeader"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <GridLayout
+            android:id="@+id/adminOptionsGrid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:columnCount="2"
+            android:useDefaultMargins="true"
+            app:layout_constraintTop_toBottomOf="@id/tvAdminOptionsTitle">
+
+            <LinearLayout android:id="@+id/btnViewProfile" style="@style/OptionCardStyle">
+                <ImageView
+                    style="@style/IconStyle"
+                    android:src="@android:drawable/ic_menu_gallery"
+                    android:contentDescription="@string/view_profile"
+                    app:tint="#212121" />
+                <TextView style="@style/OptionTextStyle" android:text="@string/view_profilE" />
+            </LinearLayout>
+
+            <LinearLayout android:id="@+id/btnUpdateProfiles" style="@style/OptionCardStyle">
+                <ImageView
+                    style="@style/IconStyle"
+                    android:src="@android:drawable/ic_menu_edit"
+                    android:contentDescription="@string/update_profiles"
+                    app:tint="#212121" />
+                <TextView style="@style/OptionTextStyle" android:text="@string/Update_Profile" />
+            </LinearLayout>
+
+            <LinearLayout android:id="@+id/btnSeeComplaints" style="@style/OptionCardStyle">
+                <ImageView
+                    style="@style/IconStyle"
+                    android:src="@android:drawable/ic_menu_report_image"
+                    android:contentDescription="@string/complaints"
+                    app:tint="#212121" />
+                <TextView style="@style/OptionTextStyle" android:text="@string/see_complaints" />
+            </LinearLayout>
+
+            <LinearLayout android:id="@+id/btnSeeApplications" style="@style/OptionCardStyle">
+                <ImageView
+                    style="@style/IconStyle"
+                    android:src="@android:drawable/ic_menu_agenda"
+                    android:contentDescription="@string/applications"
+                    app:tint="#212121" />
+                <TextView style="@style/OptionTextStyle" android:text="@string/see_applications" />
+            </LinearLayout>
+
+            <LinearLayout android:id="@+id/btnRoomAssignment" style="@style/OptionCardStyle">
+                <ImageView
+                    style="@style/IconStyle"
+                    android:src="@android:drawable/ic_dialog_map"
+                    android:contentDescription="@string/rooms"
+                    app:tint="#212121" />
+                <TextView style="@style/OptionTextStyle" android:text="@string/room_assignment" />
+            </LinearLayout>
+
+            <LinearLayout android:id="@+id/btnSendNotice" style="@style/OptionCardStyle">
+                <ImageView
+                    style="@style/IconStyle"
+                    android:src="@android:drawable/ic_menu_send"
+                    android:contentDescription="@string/notice"
+                    app:tint="#212121" />
+                <TextView style="@style/OptionTextStyle" android:text="@string/send_notice" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnAdminExit"
+                style="@style/OptionCardStyle"
+                android:layout_columnSpan="2"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="160dp"
+                android:minHeight="45dp"
+                android:layout_marginTop="16dp">
+                <ImageView
+                    style="@style/IconStyle"
+                    android:src="@android:drawable/ic_lock_power_off"
+                    android:contentDescription="@string/exiT"
+                    app:tint="#212121" />
+                <TextView
+                    style="@style/OptionTextStyle"
+                    android:text="@string/Exit"
+                    android:layout_marginStart="8dp"/>
+            </LinearLayout>
+
+        </GridLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

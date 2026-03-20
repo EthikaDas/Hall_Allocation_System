@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".RoomAssignmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminApplicationsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminNoticeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminComplaintsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminUpdateProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminViewProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ComplaintActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FindSeniorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NotificationsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HallApplicationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StudentDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StudentLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminRegistrationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StudentRegistrationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginSelectionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegistrationSelectionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

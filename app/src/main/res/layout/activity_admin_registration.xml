@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="40dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/admin_registration"
+            android:textColor="#FFFFFF"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etAdminName"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="30dp"
+            android:hint="@string/full_Name"
+            android:autofillHints="name"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#94A3B8"
+            android:backgroundTint="#3D5AFE"
+            android:inputType="textPersonName"
+            tools:ignore="TextFields" />
+
+        <EditText
+            android:id="@+id/etAdminEmail"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="15dp"
+            android:hint="@string/admin_email"
+            android:autofillHints="emailAddress"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#94A3B8"
+            android:backgroundTint="#3D5AFE"
+            android:inputType="textEmailAddress"
+            tools:ignore="TextFields" />
+
+        <EditText
+            android:id="@+id/etAdminPassword"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="15dp"
+            android:hint="@string/Admin_password"
+            android:autofillHints="password"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#94A3B8"
+            android:backgroundTint="#3D5AFE"
+            android:inputType="textPassword"
+            tools:ignore="TextFields" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnRegisterAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:background="#3D5AFE"
+            android:text="@string/register_admin"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvAdminCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/CANCEL"
+            android:textColor="#FF5252"
+            android:padding="16dp" />
+
+    </LinearLayout>
+</ScrollView>

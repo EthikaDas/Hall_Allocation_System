@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/main_background"
+    android:padding="30dp"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:letterSpacing="0.05"
+        android:text="@string/hall_allocation"
+        android:textColor="#FFFFFF"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="100dp"
+        android:text="@string/are_you_already_registered"
+        android:textColor="#94A3B8"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnYes"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:minWidth="300dp"
+        android:layout_marginBottom="20dp"
+        android:background="#1D4ED8"
+        android:text="@string/yes_log_in"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnNo"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:minWidth="300dp"
+        android:layout_marginBottom="40dp"
+        android:background="#1D4ED8"
+        android:text="@string/no_create_account"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"/>
+
+    <TextView
+        android:id="@+id/tvExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/exit_system"
+        android:textColor="#FF6B6B"
+        android:textStyle="bold"
+        android:textSize="13sp"
+        android:padding="16dp"
+        android:minHeight="48dp"
+        android:minWidth="48dp"
+        android:gravity="center"
+        android:letterSpacing="0.2"
+        android:clickable="true"
+        android:focusable="true"/>
+
+</LinearLayout>
